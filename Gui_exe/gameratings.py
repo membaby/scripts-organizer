@@ -1,6 +1,5 @@
 import scrapy
 from scrapy.selector import Selector
-from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver import ActionChains
 from selenium.webdriver.chrome.options import Options

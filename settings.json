@@ -2,8 +2,8 @@
     "scrapers": [
         {
             "name": "My API Test",
-            "path": "D:/Freelancer.com/Open-Projects/Tim_projects/Scraper_GUI/script.py",
-            "cmd": "python D:/Freelancer.com/Open-Projects/Tim_projects/Scraper_GUI/script.py   ",
+            "path": "D:/Freelancer.com/Open-Projects/Scraper_GUI/script.py",
+            "cmd": "python D:/Freelancer.com/Open-Projects/Scraper_GUI/script.py   ",
             "schedule": "4 Hours",
             "time": "3:30",
             "lastRun": "16-03-2022 04:02",
@@ -11,20 +11,20 @@
         },
         {
             "name": "Ratings CSV",
-            "path": "D:/Freelancer.com/Open-Projects/Tim_projects/Scraper_GUI/Gui_exe/ratings_csv.py",
-            "cmd": "python D:/Freelancer.com/Open-Projects/Tim_projects/Scraper_GUI/Gui_exe/ratings_csv.py  D:/Freelancer.com/Open-Projects/Tim_projects/Scraper_GUI/Gui_exe/complist.csv D:/Freelancer.com/Open-Projects/Tim_projects/Scraper_GUI/Gui_exe/compoutput.csv",
+            "path": "D:/Freelancer.com/Open-Projects/Scraper_GUI/Gui_exe/ratings_csv.py",
+            "cmd": "python D:/Freelancer.com/Open-Projects/Scraper_GUI/Gui_exe/ratings_csv.py  D:/Freelancer.com/Open-Projects/Scraper_GUI/Gui_exe/complist.csv D:/Freelancer.com/Open-Projects/Scraper_GUI/Gui_exe/compoutput.csv",
             "schedule": "Hourly",
             "time": "00:00",
-            "lastRun": "16-03-2022 03:48",
+            "lastRun": "26-05-2022 09:02",
             "status": 0
         },
         {
             "name": "Tennis Match",
-            "path": "D:/Freelancer.com/Open-Projects/Tim_projects/Scraper_GUI/Gui_exe/tennismatch.py",
-            "cmd": "python D:/Freelancer.com/Open-Projects/Tim_projects/Scraper_GUI/Gui_exe/tennismatch.py  x D:/Freelancer.com/Open-Projects/Tim_projects/Scraper_GUI/Gui_exe/tennisschedule.csv",
-            "schedule": "Hourly",
-            "time": "00:00",
-            "lastRun": "16-03-2022 04:00",
+            "path": "D:/Freelancer.com/Open-Projects/Scraper_GUI/Gui_exe/tennismatch.py",
+            "cmd": "python D:/Freelancer.com/Open-Projects/Scraper_GUI/Gui_exe/tennismatch.py  x D:/Freelancer.com/Open-Projects/Scraper_GUI/Gui_exe/tennisschedule.csv",
+            "schedule": "Continuous",
+            "time": "8:21",
+            "lastRun": "26-05-2022 09:03",
             "status": 0
         }
     ]

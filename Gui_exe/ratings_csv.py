@@ -20,6 +20,8 @@ def getdata(bestandsnaam):
     from datetime import datetime
     import csv
     import numpy as np
+    from webdriver_manager.chrome import ChromeDriverManager
+
 
     now1 = datetime.now()  
 
@@ -39,8 +41,7 @@ def getdata(bestandsnaam):
     chrome_options.add_argument('--user-agent="Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 640 XL LTE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Mobile Safari/537.36 Edge/12.10166"')
     chrome_options.add_experimental_option("detach", True)
 
-    chrome_path = which("chromedriver")
-    driver = webdriver.Chrome(resource_path('./driver/chromedriver.exe'), options=chrome_options)
+    driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
 
     items = []
 

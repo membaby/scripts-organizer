@@ -30,12 +30,6 @@ except:
       cache = {'scrapers': []}
       json.dump(cache , file, indent = 4)
 
-def kill(proc_pid):
-    process = psutil.Process(proc_pid)
-    for proc in process.children(recursive=True):
-        proc.kill()
-    process.kill()
-
 def startScraper(id):
    if cache['scrapers'][int(id)]['status']:
       return
@@ -57,12 +51,23 @@ def startScraper(id):
 
       start_scraper()
 
+      def restart_scraper():
+         if cache['scrapers'][int(id)]['status']:
+            while pro:
+               pro[-1].terminate()
+               pro.pop(-1)
+            start_scraper()
+
       if sche == 'Hourly':
          schedule.every(1).hours.do(start_scraper)
       elif sche == '4 Hours':
          schedule.every(4).hours.do(start_scraper)
       elif sche == 'Daily':
          schedule.every().day.at(run_time).do(start_scraper)
+      elif sche == 'Continuous':
+         # schedule.every().day.at(run_time).do(restart_scraper)
+         schedule.every().minutes.do(restart_scraper)
+      
       
       if sche != 'Not Scheduled':
          while cache['scrapers'][int(id)]['status']:
@@ -72,14 +77,24 @@ def startScraper(id):
                updateSettings()
             else:
                time.sleep(1)
+         else:
+            while pro:
+               pro[-1].terminate()
+               pro.pop(-1)
       else:
          pro[-1].wait()
 
-      pro[-1].terminate()
+      try:
+         pro[-1].terminate()
+      except:
+         pass
+      while pro:
+         pro[-1].terminate()
+         pro = pro[:-1]
+      print(pro)
       cache['scrapers'][int(id)]['status'] = 0
       logger.info(f'Scraper terminated. NAME: {name}')
       updateSettings()
-
    Thread(target=run, args=()).start()
 
 def stopScraper(id):
@@ -103,7 +118,7 @@ def addScraper(name, path, arguments, schedule, run_time, input, output):
    logger.info(f'Added a new scraper: NAME: {name}, PATH: {path}')
 
 def updateSchedule(id):
-   schedules = ['Not Scheduled', 'Hourly', '4 Hours', 'Daily']
+   schedules = ['Not Scheduled', 'Hourly', '4 Hours', 'Daily', 'Continuous']
    cur_schedule_index = schedules.index(cache['scrapers'][id]['schedule'])
    if cur_schedule_index == len(schedules)-1:
       cur_schedule_index = -1
@@ -114,7 +129,6 @@ def updateSchedule(id):
 
 
 UPDATEGUINOW = True
-
 def updateSettings():
    global UPDATEGUINOW
    with open('settings.json', 'w+', encoding='utf8') as file:
@@ -271,6 +285,7 @@ class AddScraperWindow(QWidget):
       self.cmbo_SCHEDULE.addItem("Hourly")
       self.cmbo_SCHEDULE.addItem("4 Hours")
       self.cmbo_SCHEDULE.addItem("Daily")
+      self.cmbo_SCHEDULE.addItem("Continuous")
 
       self.btn_BROWSE1 = QPushButton("BROWSE")
       self.btn_BROWSE2 = QPushButton("BROWSE")
