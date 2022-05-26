@@ -1,0 +1,58 @@
+Hi Mate,
+
+Here I try to give you a clear description of what I want in the next project. My goal is to get some exe files with a gui where I can do the following things:
+
+1) Enter path/filenames where I fill in the input/output files if they are in place. For each file I will need a chooice to enter a input file, output file (inc path). 
+	If empty then there is no input file. Files can be a .csv, .txt, .xlsm, .xlsb
+
+2) Some files will be running until I stop them manual, other files will stop automatic. So I want to be able to click on buttons Start / Stop. I also want a status file with a status "Running" or
+"Stopped"
+
+3) I also will assign so timestamps in my scraperfiles. I would like to see the last timestamp of each scraper if they are there.
+
+4) When I press a button to stop the scraper then I want that the scraper will be stopped and every file / browser will be closed.
+
+5) I also want a option to schedule each scraper. I want a chooise (every hour, every 4 hour, every day) or when I give a time then it runs every day at that time.
+
+I added some files for you to start with. in the end I have lots of scrapers and I really want to be able to make my own gui exefiles. So I want to ask you to make the first one and also make a 
+really clear description of how you did everything so I will be able to make my own in a later stage.
+
+A description of the files I added:
+
+Scraper 1: Soccerstandings
+
+This scraper will get scores from a website and put some data in a .csv file after it did his calculations. 
+
+Files: 
+
+- ratings_csv.py (scraperfile)
+- complist.csv (input)
+- compoutput.csv (output)
+
+In the file I have added my current path. I would like to see the option that I can fill it in on the gui window. If possible I also want a default value in the gui window. If you learn me
+where you coded that, I will be able to change it by myself.
+
+For this scraper I want all options as described above.
+
+Scraper 2: Tennisschedule
+
+This scraper will get scores from a website and put some data in a .csv file after it did his calculations. There is no input file for this
+
+Files: 
+
+- tennismatch.py (scraperfile)
+- gameratings.py (help scraperfile)
+- tennisschedule.csv (output)
+
+In the file I have added my current path. I would like to see the option that I can fill it in on the gui window. If possible I also want a default value in the gui window. If you learn me
+where you coded that, I will be able to change it by myself.
+
+For this scraper I want all options as described above.
+
+I think this is a good start for this project. As said before, I really want to learn for you and I want to be able to make my own files.
+
+Other question, In the code I do a lot of print statements. On this moment I can see the output of these statements in the debugger. But when I have a exe file then there is no debugger anymore.
+Is it easy for you to make, for example, a txt file with on every line a new output?
+
+
+

@@ -1,0 +1,31 @@
+{
+    "scrapers": [
+        {
+            "name": "Test Script",
+            "path": "D:/Freelancer.com/Open-Projects/Tim_projects/Scraper_GUI/output/scrapers/script.py",
+            "cmd": "python D:/Freelancer.com/Open-Projects/Tim_projects/Scraper_GUI/output/scrapers/script.py  x x",
+            "schedule": "Hourly",
+            "time": "00:00",
+            "lastRun": "16-03-2022 06:21",
+            "status": 0
+        },
+        {
+            "name": "Ratings",
+            "path": "D:/Freelancer.com/Open-Projects/Tim_projects/Scraper_GUI/output/scrapers/ratings_csv.py",
+            "cmd": "python D:/Freelancer.com/Open-Projects/Tim_projects/Scraper_GUI/output/scrapers/ratings_csv.py  D:/Freelancer.com/Open-Projects/Tim_projects/Scraper_GUI/output/files/complist.csv D:/Freelancer.com/Open-Projects/Tim_projects/Scraper_GUI/output/files/compoutput.csv",
+            "schedule": "4 Hours",
+            "time": "00:00",
+            "lastRun": "16-03-2022 06:20",
+            "status": 0
+        },
+        {
+            "name": "Tennis Matches",
+            "path": "D:/Freelancer.com/Open-Projects/Tim_projects/Scraper_GUI/output/scrapers/tennismatch.py",
+            "cmd": "python D:/Freelancer.com/Open-Projects/Tim_projects/Scraper_GUI/output/scrapers/tennismatch.py  x D:/Freelancer.com/Open-Projects/Tim_projects/Scraper_GUI/output/files/compoutput.csv",
+            "schedule": "Daily",
+            "time": "00:00",
+            "lastRun": "16-03-2022 06:20",
+            "status": 0
+        }
+    ]
+}

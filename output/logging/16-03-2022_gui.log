@@ -1,0 +1,38 @@
+2022-03-16 06:13:29,855 [INFO] GUI started.
+2022-03-16 06:13:49,608 [INFO] GUI started.
+2022-03-16 06:15:50,301 [INFO] Added a new scraper: NAME: Test Script, PATH: D:/Freelancer.com/Open-Projects/Tim_projects/Scraper_GUI/output/scrapers/script.py
+2022-03-16 06:16:27,563 [INFO] Added a new scraper: NAME: Ratings, PATH: D:/Freelancer.com/Open-Projects/Tim_projects/Scraper_GUI/output/scrapers/ratings_csv.py
+2022-03-16 06:17:04,885 [INFO] Added a new scraper: NAME: Tennis Matches, PATH: D:/Freelancer.com/Open-Projects/Tim_projects/Scraper_GUI/output/scrapers/tennismatch.py
+2022-03-16 06:17:09,363 [INFO] Scraper starting. NAME: Test Script - Scheduled: Hourly
+2022-03-16 06:17:14,628 [INFO] Scraper terminated. NAME: Test Script
+2022-03-16 06:17:17,410 [INFO] Scraper starting. NAME: Ratings - Scheduled: Hourly
+2022-03-16 06:17:19,488 [INFO] Scraper terminated. NAME: Ratings
+2022-03-16 06:17:22,195 [INFO] Scraper starting. NAME: Tennis Matches - Scheduled: Daily
+2022-03-16 06:17:37,324 [INFO] Scraper terminated. NAME: Tennis Matches
+2022-03-16 06:17:46,413 [INFO] Scraper starting. NAME: Tennis Matches - Scheduled: Daily
+2022-03-16 06:17:51,450 [INFO] Scraper terminated. NAME: Tennis Matches
+2022-03-16 06:17:54,250 [INFO] Scraper starting. NAME: Ratings - Scheduled: Hourly
+2022-03-16 06:18:06,359 [INFO] Scraper terminated. NAME: Ratings
+2022-03-16 06:18:08,651 [INFO] Scraper starting. NAME: Ratings - Scheduled: Hourly
+2022-03-16 06:18:13,669 [INFO] Scraper terminated. NAME: Ratings
+2022-03-16 06:18:21,549 [INFO] Scraper starting. NAME: Ratings - Scheduled: Hourly
+2022-03-16 06:18:25,611 [INFO] Scraper terminated. NAME: Ratings
+2022-03-16 06:19:15,932 [INFO] Scraper starting. NAME: Ratings - Scheduled: Hourly
+2022-03-16 06:19:33,129 [INFO] Scraper terminated. NAME: Ratings
+2022-03-16 06:19:34,772 [INFO] Scraper starting. NAME: Ratings - Scheduled: Hourly
+2022-03-16 06:19:48,933 [INFO] Scraper terminated. NAME: Ratings
+2022-03-16 06:20:00,099 [INFO] Scraper starting. NAME: Tennis Matches - Scheduled: Daily
+2022-03-16 06:20:03,124 [INFO] Scraper terminated. NAME: Tennis Matches
+2022-03-16 06:20:21,269 [INFO] GUI started.
+2022-03-16 06:20:26,964 [INFO] Scraper starting. NAME: Tennis Matches - Scheduled: Daily
+2022-03-16 06:20:33,346 [INFO] Scraper terminated. NAME: Tennis Matches
+2022-03-16 06:20:41,283 [INFO] GUI started.
+2022-03-16 06:20:44,610 [INFO] Scraper starting. NAME: Tennis Matches - Scheduled: Daily
+2022-03-16 06:20:51,993 [INFO] Scraper terminated. NAME: Tennis Matches
+2022-03-16 06:20:54,976 [INFO] Scraper starting. NAME: Test Script - Scheduled: Hourly
+2022-03-16 06:20:58,522 [INFO] Scraper starting. NAME: Ratings - Scheduled: Hourly
+2022-03-16 06:21:04,765 [INFO] Scraper schedule changed: ID: 1, SCHEDULE: 4 Hours
+2022-03-16 06:21:30,386 [INFO] Scraper terminated. NAME: Test Script
+2022-03-16 06:21:31,897 [INFO] Scraper starting. NAME: Test Script - Scheduled: Hourly
+2022-03-16 06:22:00,339 [INFO] Scraper terminated. NAME: Ratings
+2022-03-16 06:22:00,340 [INFO] Scraper terminated. NAME: Test Script
