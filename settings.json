@@ -1,0 +1,22 @@
+{
+    "scrapers": [
+        {
+            "name": "My API Test 2",
+            "path": "D:/Freelancer.com/Open-Projects/Scraper_GUI/script.py",
+            "cmd": "python D:/Freelancer.com/Open-Projects/Scraper_GUI/script.py   ",
+            "schedule": "Continuous",
+            "time": "3:30",
+            "lastRun": "24-06-2022 21:27",
+            "status": 0
+        },
+        {
+            "name": "My API Test 3",
+            "path": "D:/Freelancer.com/Open-Projects/Scraper_GUI/script.py",
+            "cmd": "python D:/Freelancer.com/Open-Projects/Scraper_GUI/script.py   ",
+            "schedule": "Not Scheduled",
+            "time": "3:30",
+            "lastRun": "24-06-2022 21:27",
+            "status": 0
+        }
+    ]
+}
